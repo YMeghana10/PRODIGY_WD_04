@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 0.5em 0 0;
+            font-size: 1.2em;
+        }
+        nav {
+            margin: 1em 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 2em 0;
+        }
+        section {
+            padding: 2em 0;
+            border-bottom: 1px solid #ddd;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 1em;
+            font-size: 2em;
+            color: #007bff;
+        }
+        #about img {
+            display: block;
+            margin: 0 auto 1em;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        #about p {
+            text-align: center;
+            font-size: 1.1em;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .skill, .project {
+            flex: 1 0 30%;
+            box-sizing: border-box;
+            margin: 1em;
+            padding: 1.5em;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .skill:hover, .project:hover {
+            transform: translateY(-5px);
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 1em;
+        }
+        #resume p, #contact p {
+            text-align: center;
+            font-size: 1.1em;
+        }
+        #resume a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #resume a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>YEDUGURU SAI MEGHANA</h1>
+        <p>Your Tagline or Introduction</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.Gh8QtnFEh8LOj1a6-Q88FQHaFj&pid=Api&P=0&h=220" alt="Your Photo">
+            <p>Short bio highlighting your skills and experience. Briefly describe your background, what drives you, and what you are passionate about.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">Skill 1</div>
+                <div class="skill">Skill 2</div>
+                <div class="skill">Skill 3</div>
+                <!-- Add more skills as needed -->
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project Title 1</h3>
+                    <p>Project description 1. Explain the goal of the project, the technologies used, and the outcomes achieved.</p>
+                </div>
+                <div class="project">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project Title 2</h3>
+                    <p>Project description 2. Explain the goal of the project, the technologies used, and the outcomes achieved.</p>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+        <section id="resume">
+            <h2>Resume</h2>
+            <p><a href="resume.pdf" download>Download my resume</a></p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: your-email@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <!-- Add any additional links or information here -->
+    </footer>
+</body>
+</html>
